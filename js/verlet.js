@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // End of configuration area
     var canvas = document.getElementById("canvas"), ctx = canvas.getContext("2d"), stepsPerSimSecond = framerate * Math.ceil(precision / framerate), framesPerSimSecond = framerate / timescale, stepsPerFrame = Math.floor(stepsPerSimSecond / framesPerSimSecond), dt = 1 / stepsPerSimSecond, scale = 0.000001, planets = [], origin = { x: 0, y: 0 };
     var time = 0;
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = document.body.offsetWidth;
+    canvas.height = document.body.offsetHeight;
     origin.x = canvas.width / 2;
     origin.y = canvas.height / 2;
     initPlanets(planets);

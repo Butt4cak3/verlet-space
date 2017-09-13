@@ -125,8 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	let time = 0;
 
-	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
+	canvas.width = document.body.offsetWidth;
+	canvas.height = document.body.offsetHeight;
 
 	origin.x = canvas.width / 2;
 	origin.y = canvas.height / 2;
